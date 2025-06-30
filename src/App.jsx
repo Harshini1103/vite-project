@@ -6,6 +6,15 @@ import Statemanagement from "./Statemanagement";
 import Statemanagement2 from "./Statemanagement2";//useState
 import ChangeColor from "./changeColor";
 import './App.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Gallery from "./components/Gallery";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Signin from "./components/Signin";
+import Signup from "./components/Signup";
+import Navbar from "./components/Navbar";
+
 const App=()=>{
   let university="Marvel"
   return(
@@ -17,9 +26,22 @@ const App=()=>{
    <Destructuring university={university} bestFriend="Meghana"/> */}
    {/* <Statemanagement/> */}
  {/* <Statemanagement2/> */}
-<ChangeColor/>
+{/* <ChangeColor/> */}
+<BrowserRouter>
+<Navbar/>
+<Routes>
+  <Route path='/' element={<Home/>}/>
+    <Route path='/gallary' element={<Gallery/>}/>
+    <Route path='/aboutus' element={<About/>}/>
+    <Route path='/contact' element={<Contact/>}/>
+    <Route path='/signin' element={<Signin/>}/>
+    <Route path='/signup' element={<Signup/>}/>
+</Routes>
+</BrowserRouter>
+
+
 
     </>
   )
 }
-export default App;
+export default App

@@ -1,0 +1,63 @@
+
+body {
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+  background:linear-gradient(to right, #ffd6e8, #e0c3fc); 
+}
+
+
+.navbar {
+  background-color: white !important;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0, 0, 0, 0.1);
+  padding:12px 20px;
+  margin:10px 30px;
+}
+
+
+.navbar-brand {
+  font-size:26px;
+  font-weight:bold;
+}
+
+.navbar-brand .flower {
+  color:hotpink;
+}
+
+.navbar-brand .shop {
+  color:purple;
+}
+
+
+.navbar-nav {
+  width:100%;
+  justify-content:center;
+  gap:30px;
+}
+
+.nav-item .nav-link {
+  color:#333;
+  font-weight:500;
+}
+
+.nav-item .nav-link:hover {
+  color:hotpink;
+}
+
+
+.form-control {
+  border-radius:5px;
+  padding:6px 10px;
+}
+
+.btn-outline-success {
+  color:white;
+  background-color:hotpink;
+  border-color:hotpink;
+}
+
+.btn-outline-success:hover {
+  background-color:deeppink;
+  border-color:deeppink;
+}
